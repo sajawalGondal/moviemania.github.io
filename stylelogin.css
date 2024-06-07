@@ -1,0 +1,46 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg {
+    /* The image used */
+    background-image: url('background.jpeg');
+    /* Make the background image fixed */
+    background-attachment: fixed;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Ensure it covers the full height of the page */
+    min-height: 100vh;
+}
+
+.container {
+    height: 100%;
+}
+
+.intro {
+    color: white;
+    margin-top: 50px;
+}
+
+.forms {
+    margin-top: 50px;
+}
+
+.movie-mania-heading {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}

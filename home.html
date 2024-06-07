@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMingle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        function redirectToIndex() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MovieMingle</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#watch-later">Watch Later</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top-rated">Top Rated</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#now-playing">Now Playing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#upcoming">Upcoming</a>
+                    </li>
+                </ul>
+                <button id="dark-mode-toggle" class="btn btn-secondary">Toggle Dark Mode</button>
+                <button onclick="redirectToIndex()">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="search-bar mb-4">
+            <input type="text" id="search-input" class="form-control" placeholder="Search for a movie">
+            <div id="suggestions" class="list-group"></div>
+            <button id="search-button" class="btn btn-primary mt-2">Search</button>
+        </div>
+        <div id="movie-details"></div>
+        <div id="movie-trailer"></div>
+        <div id="movie-recommendations"></div>
+
+        <h2>Popular Movies</h2>
+        <div id="popular-movies" class="row"></div>
+
+        <h2 id="watch-later">Watch Later</h2>
+        <div id="watch-later-movies" class="row"></div>
+
+        <h2 id="top-rated">Top Rated Movies</h2>
+        <div id="top-rated-movies" class="row"></div>
+
+        <h2 id="now-playing">Now Playing</h2>
+        <div id="now-playing-movies" class="row"></div>
+
+        <h2 id="upcoming">Upcoming Movies</h2>
+        <div id="upcoming-movies" class="row"></div>
+    </div>
+
+    <footer class="bg-primary text-white text-center text-lg-start mt-4">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">About MovieMingle</h5>
+                    <p>
+                        MovieMingle is your go-to platform for discovering the latest and greatest in cinema. Stay updated with popular, top-rated, and upcoming movies. Join us to keep your watch list full and exciting.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#watch-later" class="text-white">Watch Later</a></li>
+                        <li><a href="#top-rated" class="text-white">Top Rated</a></li>
+                        <li><a href="#now-playing" class="text-white">Now Playing</a></li>
+                        <li><a href="#upcoming" class="text-white">Upcoming</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-white">Facebook</a></li>
+                        <li><a href="#" class="text-white">Twitter</a></li>
+                        <li><a href="#" class="text-white">Instagram</a></li>
+                        <li><a href="#" class="text-white">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 MovieMingle. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
